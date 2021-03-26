@@ -12,7 +12,8 @@
   padding: 48px 40px;
 
   transform: translateX(100%);
-  transition: transform $timing-function;
+  opacity: 0;
+  transition: transform $timing-function, opacity $timing-function;
 
   z-index: 100;
 
@@ -22,6 +23,7 @@
 }
 
 .menu-container.is-open {
+  opacity: 1;
   transform: translateX(0);
 }
 
