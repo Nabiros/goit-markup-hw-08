@@ -1,14 +1,34 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  min-width: 320px;
+  max-width: 480px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
   background-color: $btn-bg-color;
+
+  @media screen and(min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    max-width: 1600px;
+  }
 }
 
 .person {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .person__card {
@@ -17,10 +37,41 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $color-white;
+
+  &:not(:last-child) {
+    @media screen and(max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and(min-width: 768px) and(max-width: 1199px) {
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and(min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
-.person__img {
-  margin-bottom: 30px;
+.person__thumb {
+  /* max-height: 460px; */
+  object-fit: cover;
+
+  /* @media screen and(min-width: 480px) {
+    max-height: 460px;
+  }
+
+  @media screen and(min-width: 768px) {
+    max-height: 374px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    max-height: 260px;
+  } */
 }
 
 .person__name {
@@ -28,6 +79,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 

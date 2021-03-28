@@ -1,3 +1,9 @@
+.section-project {
+  @media screen and(max-width:1200px) {
+    display: none;
+  }
+}
+
 .specials {
   color: $nav-color;
   display: flex;
