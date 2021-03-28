@@ -8,7 +8,7 @@
   background-color: $bg-color;
   text-align: center;
   background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-    url('/images/bg_mob.jpg');
+    url('/images/bgmob.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -17,7 +17,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-      url('/images/bg_mob2x.jpg');
+      url('/images/bgmob2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -29,7 +29,7 @@
     width: 100%;
     height: auto;
     background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
-      url('/images/bg_tab.jpg');
+      url('/images/bgtab.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,7 +42,7 @@
           $hero-gradient,
           $hero-gradient
         ),
-        url('/images/bg_tab2x.jpg');
+        url('/images/bgtab2x.jpg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
