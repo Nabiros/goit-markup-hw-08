@@ -1952,18 +1952,40 @@ header {
 }
 
 .footer {
+  display: block;
   background-color: #2f303a;
   padding: 60px 0;
   margin: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .footer__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  /* display: flex;
+  align-items: baseline; */
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__contacts {
@@ -1993,6 +2015,14 @@ header {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .studio-logo-footer {
   color: #ffffff;
   font-family: Raleway;
@@ -2002,15 +2032,40 @@ header {
 }
 
 .address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  /* display: flex;
+  flex-direction: column;
+  align-content: space-between; */
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .address {
+    margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
 }
 
 .address__link {
@@ -2030,12 +2085,34 @@ header {
 }
 
 .join {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 206px;
   height: 80px;
-  margin-left: 70px;
+  /* margin-left: 70px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .join {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    /* width: 100%; */
+    min-width: 206px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
 }
 
 .join__title {
@@ -2045,6 +2122,12 @@ header {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .join__title {
+    text-align: center;
+  }
 }
 
 .socials-footer {
@@ -2087,29 +2170,55 @@ header {
   fill: currentColor;
 }
 
-.subscribe {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: auto;
+  }
 }
 
 .subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .subscribe__input {
   padding: 15px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #ffffff;
   background-color: inherit;
 }
 
+@media screen and (max-width: 1200px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
+}
+
 .subscribe__submit {
   width: 200px;
   margin-left: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .subscribe__submit {
+    margin: 0 auto;
+  }
 }
 
 .subscribe__button {
