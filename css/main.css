@@ -1972,11 +1972,6 @@ header {
   }
 }
 
-.footer__block {
-  /* display: flex;
-  align-items: baseline; */
-}
-
 @media screen and (min-width: 1200px) {
   .footer__block {
     display: -webkit-box;
@@ -2015,7 +2010,7 @@ header {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .footer__logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2032,9 +2027,6 @@ header {
 }
 
 .address {
-  /* display: flex;
-  flex-direction: column;
-  align-content: space-between; */
   margin: 0 auto;
 }
 
@@ -2082,37 +2074,6 @@ header {
 
 .f-email {
   margin: 9px 0;
-}
-
-.join {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 206px;
-  height: 80px;
-  /* margin-left: 70px; */
-}
-
-@media screen and (max-width: 1200px) {
-  .join {
-    margin: 0 auto;
-    margin-bottom: 60px;
-    /* width: 100%; */
-    min-width: 206px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .join {
-    margin-left: 70px;
-  }
 }
 
 .join__title {
@@ -2243,5 +2204,50 @@ header {
   border-radius: 4px;
   color: #ffffff;
   background-color: #2196f3;
+}
+
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 206px;
+  height: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .join {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .join {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */
