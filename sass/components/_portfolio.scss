@@ -158,7 +158,11 @@
 .card-set__thumb {
   position: relative;
   overflow: hidden;
-  max-width: 450px;
+  min-width: 450px;
+}
+
+.card__image {
+  width: 100%;
 }
 
 .projects-overlay {
