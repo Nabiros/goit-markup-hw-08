@@ -366,7 +366,7 @@ h4 {
 
 img {
   display: block;
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
@@ -1859,7 +1859,7 @@ header {
 .card-set__thumb {
   position: relative;
   overflow: hidden;
-  min-width: 450px;
+  max-width: 450px;
 }
 
 .card__image {
