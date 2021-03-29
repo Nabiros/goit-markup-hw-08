@@ -1,18 +1,8 @@
 .team {
-  min-width: 320px;
-  max-width: 480px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
   background-color: $btn-bg-color;
-
-  @media screen and(min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and(min-width: 1200px) {
-    max-width: 1600px;
-  }
 }
 
 .person {
@@ -93,7 +83,20 @@
 .socials {
   display: flex;
   justify-content: space-between;
-  padding: 16px 32px 30px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+
+  @media screen and (min-width: 380px) and(max-width: 768px) {
+    padding-right: 76px;
+    padding-left: 76px;
+  }
 }
 
 .socials__link {

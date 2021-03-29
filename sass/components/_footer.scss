@@ -25,19 +25,18 @@
   padding: 0;
 }
 
-.nav__logo-web {
-  color: $decoration-color;
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-}
-
 .nav__logo-studio--white {
   color: $color-white;
-  font-size: 26px;
-  line-height: 1.19;
   font-weight: 700;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .footer__logo {
@@ -52,9 +51,17 @@
 .studio-logo-footer {
   color: $color-white;
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
   font-weight: 700;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .address {

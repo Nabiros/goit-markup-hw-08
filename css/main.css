@@ -488,6 +488,13 @@ header {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+  .title--h2 {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,6 +509,14 @@ header {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -539,17 +554,43 @@ header {
 .nav__logo-web {
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
   font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__logo-web {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .nav__logo-web {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .nav__logo-studio {
   color: #000000;
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
   font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__logo-studio {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .nav__logo-studio {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .nav-menu {
@@ -570,6 +611,12 @@ header {
 @media screen and (max-width: 767px) {
   .nav-menu {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    margin-left: -207px;
   }
 }
 
@@ -1260,7 +1307,6 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -30px;
     margin-top: -30px;
   }
 }
@@ -1270,9 +1316,6 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-top: 0;
@@ -1333,7 +1376,6 @@ header {
 
 .apps__title {
   color: #212121;
-  /*  display: flex; */
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 700;
@@ -1411,24 +1453,10 @@ header {
 }
 
 .team {
-  min-width: 320px;
-  max-width: 480px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
   background-color: #f5f4fa;
-}
-
-@media screen and (min-width: 768px) {
-  .team {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team {
-    max-width: 1600px;
-  }
 }
 
 .person {
@@ -1528,7 +1556,24 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px 32px 30px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .socials {
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 768px) {
+  .socials {
+    padding-right: 76px;
+    padding-left: 76px;
+  }
 }
 
 .socials__link {
@@ -1959,19 +2004,23 @@ header {
   padding: 0;
 }
 
-.nav__logo-web {
-  color: #2196f3;
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
+.nav__logo-studio--white {
+  color: #ffffff;
   font-weight: 700;
 }
 
-.nav__logo-studio--white {
-  color: #ffffff;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
+@media screen and (min-width: 1200px) {
+  .nav__logo-studio--white {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .nav__logo-studio--white {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .footer__logo {
@@ -1992,9 +2041,21 @@ header {
 .studio-logo-footer {
   color: #ffffff;
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1200px) {
+  .studio-logo-footer {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .studio-logo-footer {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 
 .address {
