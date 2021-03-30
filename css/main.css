@@ -553,7 +553,7 @@ header {
 
 .nav__logo-web {
   color: #2196f3;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -574,7 +574,7 @@ header {
 
 .nav__logo-studio {
   color: #000000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
@@ -1517,20 +1517,8 @@ header {
 }
 
 .person__thumb {
-  /* max-height: 460px; */
   -o-object-fit: cover;
      object-fit: cover;
-  /* @media screen and(min-width: 480px) {
-    max-height: 460px;
-  }
-
-  @media screen and(min-width: 768px) {
-    max-height: 374px;
-  }
-
-  @media screen and(min-width: 1200px) {
-    max-height: 260px;
-  } */
 }
 
 .person__name {
@@ -2006,6 +1994,7 @@ header {
 
 .nav__logo-studio--white {
   color: #ffffff;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
 }
 
@@ -2035,26 +2024,6 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-.studio-logo-footer {
-  color: #ffffff;
-  font-family: Raleway;
-  font-weight: 700;
-}
-
-@media screen and (min-width: 1200px) {
-  .studio-logo-footer {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .studio-logo-footer {
-    font-size: 24px;
-    line-height: 1.16;
   }
 }
 
